@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <link rel="stylesheet" href="css/tic-tac-toe.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/Tic-Tac-Toe.js"></script>
+
+  <audio id="player_win" preload="auto">
+    <source src="assets/app_alert_tone_ringtone_006.mp3"></source>
+  </audio>
+
+  <audio id="computer_win" preload="auto">
+    <source src="assets/aaj_0012_Explosion_R1_SFX.mp3"></source>
+  </audio>
+
+  <audio id="player_play" preload="auto">
+    <source src="assets/zapsplat_bell_med_chime_long_tail_11429.mp3"></source>
+  </audio>
+
+  <title>Tic Tac Toe Game</title>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!--
+  This css was obtained from a w3 schools example and then
+  edited and expanded for my own purposes
+  The example is located at this url
+   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+  -->
+  <div class="navbar">
+    <a href="index.php">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Queens
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="QueensInfo.html">Learn More!</a>
+        <a href="queensCalc.html">Custom Calculator!</a>
+        <a href="QueensGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Tic-Tac-Toe
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Tic-Tac-ToeInfo.html">Learn More!</a>
+        <a href="Tic-Tac-ToeGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Rock Paper Scissors
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="RockPaperScissorsInfo.html">Learn More!</a>
+        <a href="RockPaperScissorsGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Other Gaming Sites
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.miniclip.com/games/en/">Miniclip</a>
+        <a href="http://www.coffeebreakarcade.com/">Coffee Break Arcade</a>
+      </div>
+    </div>
+    <a href="suggestion.php">Suggestions</a>
+  </div>
+  <!--
+  End of obtained code
+  -->
+
+  <div class="game-block">
+    <table>
+      <tr>
+        <td class = "grid-square" id="grid-one"></td>
+        <td class = "grid-square" id="grid-two"></td>
+        <td class = "grid-square" id="grid-three"></td>
+      </tr>
+      <tr>
+        <td class = "grid-square" id="grid-four"></td>
+        <td class = "grid-square" id="grid-five"></td>
+        <td class = "grid-square" id="grid-six"></td>
+      </tr>
+      <tr>
+        <td class = "grid-square" id="grid-seven"></td>
+        <td class = "grid-square" id="grid-eight"></td>
+        <td class = "grid-square" id="grid-nine"></td>
+      </tr>
+    </table>
+
+    <h2>Score</h2>
+    <p id="score">0</p>
+
+    <div class="fb-share-button" data-href="http://student.athabascau.ca/~kodyro/Tic-Tac-ToeGame.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudent.athabascau.ca%2F%7Ekodyro%2FTic-Tac-ToeGame.htm&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=http://student.athabascau.ca/~kodyro/Tic-Tac-ToeGame.html">
+      Tweet
+    </a>
+
+    <p>Sound effects obtained from https://www.zapsplat.com</p>
+
+  </div>
+
+  <iframe src="embededTwitter.php" style="width: 100%; height: 500px"></iframe>
+
+  <p>Last edited March 24, 2018 by Kody Rogers</p>>
+
+</body>
+</html>

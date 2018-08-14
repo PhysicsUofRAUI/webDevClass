@@ -1,0 +1,43 @@
+.linkBlock {
+  /*
+  From Dr.Chuck's Web applications for everybody
+  here is the link to the specific code https://www.wa4e.com/code/css/position.htm
+  It is licensed under Copyright Creative Commons Attribution 3.0
+  */
+  width:20em;
+  border: 5px red solid;
+  padding: 5px;
+  margin: 5px;
+  /*
+  End of Dr. Chuck's code
+  */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00ff00;
+  padding: .25em;
+}
+
+.linkBlock a {
+  display: block;
+  text-align: center;
+  padding: .25em;
+  color: #0000EE;
+  text-decoration: underline;
+}
+
+h1 {
+  padding: .5em
+  text-align: center;
+  font-size: 500%;
+  color: #000000;
+}
+
+h2 {
+  margin: 0 auto;
+  text-align: center;
+  color: #000000;
+}
+
+p {
+  text-align: center;
+}

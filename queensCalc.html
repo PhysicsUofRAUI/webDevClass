@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/queensCalc.js"></script>
+
+  <audio id="player_win" preload="auto">
+    <source src="assets/app_alert_tone_ringtone_006.mp3"></source>
+  </audio>
+
+  <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!--
+  This css was obtained from a w3 schools example and then
+  edited and expanded for my own purposes
+  The example is located at this url
+   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+  -->
+  <div class = "nav-block">
+    <div class="navbar">
+      <a href="index.php">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Queens
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="QueensInfo.html">Learn More!</a>
+          <a href="queensCalc.html">Custom Calculator!</a>
+          <a href="QueensGame.html">Play!</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Tic-Tac-Toe
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Tic-Tac-ToeInfo.html">Learn More!</a>
+          <a href="Tic-Tac-ToeGame.html">Play!</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Rock Paper Scissors
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="RockPaperScissorsInfo.html">Learn More!</a>
+          <a href="RockPaperScissorsGame.html">Play!</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Other Gaming Sites
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="https://www.miniclip.com/games/en/">Miniclip</a>
+          <a href="http://www.coffeebreakarcade.com/">Coffee Break Arcade</a>
+        </div>
+      </div>
+      <a href="suggestion.php">Suggestions</a>
+    </div>
+  </div>
+
+  <!--
+  This form collects the number of cards collected by the
+  player specified in the form.
+  The data is then collected by the updateScore function when
+  the button is clicked
+  -->
+  <div class="calc-block">
+    <form id="frm1">
+      <pre>Number of Jokers: </pre><input type="text" name = "jokers" value="0"><br>
+      <pre>Number of Twos  : </pre><input type="text" name = "twos" value="0"><br>
+      <pre>Number of Threes: </pre><input type="text" name = "threes" value="0"><br>
+      <pre>Number of Fours : </pre><input type="text" name = "fours" value="0"><br>
+      <pre>Number of Fives : </pre><input type="text" name = "fives" value="0"><br>
+      <pre>Number of Sixs  : </pre><input type="text" name = "sixs" value="0"><br>
+      <pre>Number of Sevens: </pre><input type="text" name = "sevens" value="0"><br>
+      <pre>Number of Eights: </pre><input type="text" name = "eights" value="0"><br>
+      <pre>Number of Nines : </pre><input type="text" name = "nines" value="0"><br>
+      <pre>Number of Tens  : </pre><input type="text" name = "tens" value="0"><br>
+      <pre>Number of Jacks : </pre><input type="text" name = "jacks" value="0"><br>
+      <pre>Number of Queens (Not including Spades) : </pre>
+      <input type="text" name = "regQueens" value="0"><br>
+      <pre>Number of Queen of Spades: </pre><input type="text" name = "spadeQueens" value="0"><br>
+      <pre>Number of Kings : </pre><input type="text" name = "kings" value="0"><br>
+      <pre>Number of Aces  : </pre><input type="text" name = "aces" value="0"><br>
+      <pre>Number of Player (1,2,3,4, or 5): </pre><input type="text" name = "playerNumber" value="1"><br>
+      <button type="button" onclick="updateScore()">Submit</button>
+    </form>
+  </div>
+
+  <div class="calc-block">
+    <form id="frm2">
+      <pre>Player Number (1, 2, 3, 4, or 5): </pre><input type="text" name = "player" value="0"><br>
+      <pre>Points: </pre><input type="text" name = "points" value="0"><br>
+      <button type="button" onclick="updateScoreWithInputedScore()">Submit</button>
+    </form>
+  </div>
+
+  <div class="calc-block">
+    <table>
+      <tr>
+        <th>Player/Team One</th>
+        <th>Player/Team Two</th>
+        <th>Player/Team Three</th>
+        <th>Player/Team Four</th>
+        <th>Player/Team Five</th>
+      </tr>
+      <tr>
+        <td id='playerOne'>0</td>
+        <td id='playerTwo'>0</td>
+        <td id='playerThree'>0</td>
+        <td id='playerFour'>0</td>
+        <td id='playerFive'>0</td>
+      </tr>
+    </table>
+    <div class="fb-share-button" data-href="http://student.athabascau.ca/~kodyro/queensCalc.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudent.athabascau.ca%2F%7Ekodyro%2FqueensCalc.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=http://student.athabascau.ca/~kodyro/queensCalc.html">
+      Tweet
+    </a>
+  </div>
+
+  <iframe src="embededTwitter.php" style="width: 100%; height: 500px"></iframe>
+
+<footer class="footer-block">
+  <p>Sound effects obtained from https://www.zapsplat.com</p>
+  <p>Last edited March 24, 2018 by Kody Rogers</p>
+</footer>
+
+</body>
+</html>

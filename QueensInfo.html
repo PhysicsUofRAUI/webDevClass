@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <title>Queens Info</title>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!--
+  This css was obtained from a w3 schools example and then
+  edited and expanded for my own purposes
+  The example is located at this url
+   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+  -->
+  <div class="navbar">
+    <a href="index.php">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Queens
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="QueensInfo.html">Learn More!</a>
+        <a href="queensCalc.html">Custom Calculator!</a>
+        <a href="QueensGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Tic-Tac-Toe
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Tic-Tac-ToeInfo.html">Learn More!</a>
+        <a href="Tic-Tac-ToeGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Rock Paper Scissors
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="RockPaperScissorsInfo.html">Learn More!</a>
+        <a href="RockPaperScissorsGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Other Gaming Sites
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.miniclip.com/games/en/">Miniclip</a>
+        <a href="http://www.coffeebreakarcade.com/">Coffee Break Arcade</a>
+      </div>
+    </div>
+    <a href="suggestion.php">Suggestions</a>
+  </div>
+  <!--
+  End of obtained code
+  -->
+
+  <h1>Queens</h1>
+  <div class = "playLink">
+    <a href="QueensGame.html">Play!</a>
+  </div>
+
+  <div>
+    <h2>Steps to Play With 4 Players</h2>
+    <div class = "infoBlock">
+      <ul>
+        <li>Two teams are formed, and the teamates sit across from each other</li>
+        <li>
+          The current dealer takes a cut of the deck deal all players 13 cards.
+          The person who deals switches everytime going around clockwise.
+        </li>
+        <li>If the current dealer has a perfect cut, that person's team gets 100 points</li>
+        <li>Everyone gets a turn starting with the person to the right of the dealer</li>
+        <li>Goes around the table clockwise</li>
+        <li>Pick up a card from the middle deck or, if possible, the entire discard pile</li>
+        <li>
+          The player can pick up discard pile if the player has a pair
+          that matches the last card discarded
+        </li>
+        <li>
+          In the turn players lay down cards if:
+          <ol>
+            <li>they have three cards that match</li>
+            <li>two cards that match and a wild card</li>
+            <li>cards that match cards they or their partner have already layed down</li>
+          </ol>
+        </li>
+        <li>Then the player discards one card</li>
+        <li>This goes on till someone has no cards left</li>
+        <li>The team who goes out gets an extra 50 points</li>
+        <li>
+          Each team counts the points left in their hands and the points they
+          have laid down.
+        </li>
+        <li>
+          Then each team takes the points that was laid down and subtracts
+          points that were in there hand, and this is their points for the turn.
+        </li>
+        <li>
+          These steps are continued till one team reaches a predetermined point
+          level and goes out as well.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div>
+    <h2>Steps to play with 3 players</h2>
+    <div class = "infoBlock">
+      <p>Same as four but everyone plays by themeselves</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Steps to play with 5 players</h2>
+    <div class = "infoBlock">
+      <p>Same as three but with 5 players</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Steps to play with 6 players</h2>
+    <div class = "infoBlock">
+      <p>Can either play with two teams of three or three teams of two</p>
+    </div>
+  </div>
+
+
+  <h2>Points Given to cards</h2>
+
+  <div>
+    <div class = "infoBlock">
+      <table border=1>
+        <tr>
+          <th>Cards</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Queen of Spades</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Ace</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>King</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Queen (excluding queen of spades)</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Jack</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Ten</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Nine</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Eight</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Seven</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Six</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Five</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Four</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Three</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>Joker (Wild)</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Two (Wild)</td>
+          <td>20</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class = "infoBlock">
+      <div class="fb-share-button" data-href="http://student.athabascau.ca/~kodyro/QueensInfo.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudent.athabascau.ca%2F%7Ekodyro%2FQueensInfo.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=http://student.athabascau.ca/~kodyro/QueensInfo.html">
+        Tweet
+      </a>
+    </div>
+  </div>
+
+  <iframe src="embededTwitter.php" style="width: 100%; height: 500px"></iframe>
+
+
+
+<p>Last edited March 24, 2018 by Kody Rogers</p>
+
+</body>
+</html>

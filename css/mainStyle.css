@@ -1,0 +1,251 @@
+#rpsImages {
+  width: 25%;
+  height: auto;
+}
+
+body {
+  background-color: #666666
+}
+
+/*
+This css was obtained from a w3 schools example
+The example is located at this url https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*
+End of obtained code
+*/
+
+.playLink {
+  /*
+  From Dr.Chuck's Web applications for everybody
+  here is the link to the specific code https://www.wa4e.com/code/css/position.htm
+  It is licensed under Copyright Creative Commons Attribution 3.0
+  */
+  width:25em;
+  border: 5px #ff0000 solid;
+  padding: 5px;
+  margin: 5px;
+  /*
+  End of Dr. Chuck's code
+  */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #00ff00;
+  overflow: scroll;
+  padding: 5em;
+}
+
+.playLink a {
+  text-decoration: none;
+  color: #ff0000;
+  text-align: center;
+  font-size: 12em
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: .25em;
+}
+
+a {
+  padding: 0.25em;
+}
+
+small {
+  padding: 0.25em;
+}
+table {
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  padding: 0.25em;
+}
+
+img {
+  padding: 0.25em;
+}
+
+footer {
+  bottom: 0px;
+  padding: 0.25em;
+}
+.infoBlock {
+  /*
+  From Dr.Chuck's Web applications for everybody
+  here is the link to the specific code https://www.wa4e.com/code/css/position.htm
+  It is licensed under Copyright Creative Commons Attribution 3.0
+  */
+  width:25em;
+  border: 5px #ff0000 solid;
+  padding: 5px;
+  margin: 5px;
+  /*
+  End of Dr. Chuck's code
+  */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f000e9;
+}
+
+.calc-block {
+  /*
+  From Dr.Chuck's Web applications for everybody
+  here is the link to the specific code https://www.wa4e.com/code/css/position.htm
+  It is licensed under Copyright Creative Commons Attribution 3.0
+  */
+  width: 75%;
+  border: 5px #ff0000 solid;
+  padding: 5px;
+  margin: 5px;
+  /*
+  End of Dr. Chuck's code
+  */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #348a32;
+  overflow: scroll;
+}
+
+.game-block
+{
+  /*
+  From Dr.Chuck's Web applications for everybody
+  here is the link to the specific code https://www.wa4e.com/code/css/position.htm
+  It is licensed under Copyright Creative Commons Attribution 3.0
+  */
+  width: 75%;
+  border: 5px #ff0000 solid;
+  padding: 5px;
+  margin: 5px;
+  /*
+  End of Dr. Chuck's code
+  */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #348a32;
+  overflow: scroll;
+}
+
+p a {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  color: #0000EE;
+  font-size: 1em
+}
+footer a {
+  padding: 0em;
+  text-align: left;
+}
+
+/*
+Had to do this after using default stylesheet
+*/
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+li {
+  display: list-item;
+}
+table {
+  border-color: #000000;
+  border-width: medium;
+  border-style: solid;
+}
+
+tr {
+  border-color: #000000;
+  border-width: thin;
+  border-style: solid;
+  padding: 0.15em;
+}
+
+td {
+  border-color: #000000;
+  border-width: thin;
+  border-style: solid;
+  padding: 0.15em;
+}

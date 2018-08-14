@@ -1,0 +1,56 @@
+/*
+This code was taken from this stackoverflow question
+https://stackoverflow.com/questions/22835430/make-table-cells-square
+
+answered by:https://stackoverflow.com/users/1811992/web-tiki
+*/
+table {
+  width: 90%;
+}
+td {
+  width: 30%;
+  position: relative;
+}
+td:after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+td .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: gold;
+}
+
+
+.grid-square
+{
+  font-size: 10em;
+}
+
+.unplayed_square {
+    background-color: #348a32;
+    border-color: #000000;
+    border-width: thin;
+    border-style: solid;
+    padding: 0.00001em;
+}
+
+.player_square {
+  background-color: #800080;
+  border-color: #000000;
+  border-width: medium;
+  border-style: solid;
+  padding: 0.00001em;
+}
+
+.computer_square {
+  background-color: #a52a2a;
+  border-color: #000000;
+  border-width: medium;
+  border-style: solid;
+  padding: 0.00001em;
+}

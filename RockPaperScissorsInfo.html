@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/mainStyle.css">
+  <title>Rock Paper Scissors Info</title>
+</head>
+<body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!--
+  This css was obtained from a w3 schools example and then
+  edited and expanded for my own purposes
+  The example is located at this url
+   https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
+  -->
+  <div class="navbar">
+    <a href="index.php">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">Queens
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="QueensInfo.html">Learn More!</a>
+        <a href="queensCalc.html">Custom Calculator!</a>
+        <a href="QueensGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Tic-Tac-Toe
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Tic-Tac-ToeInfo.html">Learn More!</a>
+        <a href="Tic-Tac-ToeGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Rock Paper Scissors
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="RockPaperScissorsInfo.html">Learn More!</a>
+        <a href="RockPaperScissorsGame.html">Play!</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Other Gaming Sites
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="https://www.miniclip.com/games/en/">Miniclip</a>
+        <a href="http://www.coffeebreakarcade.com/">Coffee Break Arcade</a>
+      </div>
+    </div>
+    <a href="suggestion.php">Suggestions</a>
+  </div>
+  <!--
+  End of obtained code
+  -->
+
+  <h1>Rock Paper Scissors</h1>
+
+  <div class = "playLink">
+    <a href="RockPaperScissorsPlay.html">Play!</a>
+  </div>
+
+  <div>
+    <h2>How To Play</h2>
+    <div class = "infoBlock">
+      <p>
+        You play by using your fist to make a rock, a paper, or a scissors. Your oppenent does the same
+        The winner is decided by taking the two entries from the players and comparing them to a set of
+        pre-decided outcomes that are as follows:
+        <ol>
+          <li>If both players make the same choice then it is a tie</li>
+          <li>Rock beats Scissors</li>
+          <li>Paper beats Rock</li>
+          <li>Scissors beats Paper</li>
+        </ol>
+      </p>
+    </div>
+
+    <div class = "infoBlock">
+      <div class="fb-share-button" data-href="http://student.athabascau.ca/~kodyro/RockPaperScissorsInfo.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstudent.athabascau.ca%2F%7Ekodyro%2FRockPaperScissorsInfo.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+      <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=http://student.athabascau.ca/~kodyro/RockPaperScissorsInfo.html">
+        Tweet
+      </a>
+    </div>
+  </div>
+
+  <iframe src="embededTwitter.php" style="width: 100%; height: 500px"></iframe>
+
+
+  <p>Last edited March 24, 2018 by Kody Rogers</p>
+
+</body>
+</html>
